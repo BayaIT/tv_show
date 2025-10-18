@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "title": "Во все тяжкие",
+    "description": "Учитель химии превращается в производителя метамфетамина",
+    "rating": 9.5,
+    "year": 2008,
+    "genre": "Драма, Криминал",
+    "image": "https://m.media-amazon.com/images/M/MV5BYmQ4YWMxYjUtNjZmYi00MDQ1LWFjMjMtNjA5ZDdiYjdiODU5XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Игра престолов",
+    "description": "Борьба за власть между знатными семьями в мире фантазии",
+    "rating": 9.3,
+    "year": 2011,
+    "genre": "Фэнтези, Драма",
+    "image": "https://m.media-amazon.com/images/M/MV5BN2IzYzBiOTQtNGZmMi00NDI5LTgxMzMtN2EzZjA1NjhlOGMxXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Очень странные дела",
+    "description": "Группа детей сталкивается с паранормальными явлениями в маленьком городке",
+    "rating": 8.7,
+    "year": 2016,
+    "genre": "Фантастика, Ужасы",
+    "image": "https://images.unsplash.com/photo-1562527372-00a214490a28?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=3131"
+  },
+  {
+    "id": 4,
+    "title": "Шерлок",
+    "description": "Современная адаптация классических рассказов о Шерлоке Холмсе",
+    "rating": 9.1,
+    "year": 2010,
+    "genre": "Детектив, Драма",
+    "image": "https://m.media-amazon.com/images/M/MV5BMWY3NTljMjEtYzRiMi00NWM2LTkzNjItZTVmZjE0MTdjMjJhL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTQ4NTc5OTU@._V1_.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Друзья",
+    "description": "Шесть друзей переживают взлеты и падения жизни в Нью-Йорке",
+    "rating": 8.9,
+    "year": 1994,
+    "genre": "Комедия",
+    "image": "https://m.media-amazon.com/images/M/MV5BNDVkYjU0MzctMWRmZi00NTkxLTgwZWEtOWVhYjZlYjllYmU4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Ведьмак",
+    "description": "Охотник на монстров ищет свое место в мире магии и интриг",
+    "rating": 8.2,
+    "year": 2019,
+    "genre": "Фэнтези, Приключения",
+    "image": "https://m.media-amazon.com/images/M/MV5BMDEwOWVlY2EtMWI0ZC00OWVmLWJmZGItYTk3YjYzN2Y0YmFkXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Чернобыль",
+    "description": "Драматический пересказ чернобыльской катастрофы 1986 года",
+    "rating": 9.4,
+    "year": 2019,
+    "genre": "Драма, История",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe6PHq5OU29Q6UE8DoH6eU1Aj47zBgy_YcrZ8MOUfhJhpYHWTO"
+  },
+  {
+    "id": 8,
+    "title": "Мандалорец",
+    "description": "Охотник за головами путешествует по окраинам галактики",
+    "rating": 8.7,
+    "year": 2019,
+    "genre": "Фантастика, Приключения",
+    "image": "https://images.unsplash.com/photo-1608346128025-1896b97a6fa7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070"
+  }
+]
+

@@ -1,38 +1,104 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+/* Эффект тумана в стиле Готэма */
+.App::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 140, 0, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 1;
 }
 
-@keyframes App-logo-spin {
+/* Плавная анимация для всех переходов */
+* {
+  transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Стили для кнопок в стиле Бэтмена */
+button {
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #333 0%, #1a1a1a 100%);
+  color: #ffd700;
+  border: 2px solid #ffd700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ffd700 0%, #ff8c00 100%);
+  color: #000;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+  transform: translateY(-2px);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+}
+
+/* Стили для ссылок в стиле Бэтмена */
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: #ffd700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+a:hover {
+  color: #ff8c00;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+}
+
+/* Анимация появления контента в стиле Бэтмена */
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(30px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Анимация появления из темноты */
+@keyframes emergeFromDarkness {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateY(50px);
+    filter: blur(5px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: blur(0);
+  }
+}
+
+/* Эффект летучих мышей */
+@keyframes batWing {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
   }
 }

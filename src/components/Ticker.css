@@ -1,0 +1,119 @@
+.ticker-container {
+    overflow: hidden;
+    background: linear-gradient(90deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+    color: #ffd700;
+    padding: 20px 0;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8), 0 0 30px rgba(255, 215, 0, 0.1);
+    border-top: 2px solid #ffd700;
+    border-bottom: 2px solid #ffd700;
+}
+
+.ticker-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        #ffd700 20%,
+        #ff8c00 50%,
+        #ffd700 80%,
+        transparent 100%);
+    animation: batmanShimmer 4s linear infinite;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.ticker-container::after {
+    content: '🦇 🦇 🦇';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    opacity: 0.3;
+    animation: batWing 3s ease-in-out infinite;
+    letter-spacing: 10px;
+}
+
+.ticker-content {
+    display: flex;
+    white-space: nowrap;
+    animation: batmanScroll 25s linear infinite;
+}
+
+.ticker-text {
+    padding-right: 60px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 215, 0, 0.5);
+    letter-spacing: 2px;
+    font-family: 'Gotham', sans-serif;
+}
+
+/* Анимация прокрутки в стиле Бэтмена */
+@keyframes batmanScroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Анимация мерцания границы в стиле Бэтмена */
+@keyframes batmanShimmer {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes batWing {
+    0%, 100% {
+        transform: translateY(-50%) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-50%) rotate(-5deg);
+    }
+    75% {
+        transform: translateY(-50%) rotate(5deg);
+    }
+}
+
+/* Эффект при наведении */
+.ticker-container:hover .ticker-content {
+    animation-play-state: paused;
+}
+
+.ticker-container:hover {
+    background: linear-gradient(90deg, #1a1a1a 0%, #2a2a2a 50%, #1a1a1a 100%);
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.9), 0 0 40px rgba(255, 215, 0, 0.2);
+}
+
+.ticker-container:hover::before {
+    animation-duration: 2s;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .ticker-text {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    
+    .ticker-container::after {
+        font-size: 1rem;
+        letter-spacing: 5px;
+    }
+}
+
