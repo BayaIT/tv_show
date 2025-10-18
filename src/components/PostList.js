@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./PostList.css";
 import tvShowsData from "../data/tvShows.json";
 
@@ -16,7 +17,9 @@ function PostList() {
                         <div className="post-card-image">
                             <img src={show.image} alt={show.title} />
                             <div className="post-card-overlay">
-                                <button className="view-details-btn">Подробнее</button>
+                                <Link to={`/movies/${show.id}`} className="view-details-btn">
+                                    Подробнее
+                                </Link>
                             </div>
                         </div>
                         <div className="post-card-content">
